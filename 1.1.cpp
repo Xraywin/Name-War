@@ -1,4 +1,4 @@
-//Name War (1.0)
+//Name War (1.1)
 //by Xraywin
 
 #include <bits/stdc++.h>
