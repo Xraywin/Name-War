@@ -1,17 +1,12 @@
 //Name War (1.2)
 //by Xraywin
-
 #include <bits/stdc++.h>
 #include <windows.h>
 #include <time.h>
 using std::string;
-
 int num;
-
 const string atk_skill[] = {"普通攻击", "暴击", "连击"};
-
 const int MaxNum = 15 + 1;
-
 struct Player {
 	bool flag;
 	int HP;
@@ -21,12 +16,8 @@ void slowsay(string), input(), game(), print(int);
 bool check(int);
 int calc(string, int);
 int main() {
-	srand(time(0));
-	slowsay("游戏名：Name War 版本：1.2 作者：Xraywin");
-	Sleep(500);
-	slowsay("请输入您的游玩人数：（不得超过15人）（且必须大于1人）");
-	std::cin >> num;
-	while(num > 10) slowsay("请重新输入您的游玩人数：（不得超过15人）（且必须大于1人）"), std::cin >> num;
+	srand(time(0)), slowsay("游戏名：Name War 版本：1.2 作者：Xraywin"), Sleep(500), slowsay("请输入您的游玩人数：（不得超过15人）（且必须大于1人）"), std::cin >> num;
+	while(num > 15) slowsay("请重新输入您的游玩人数：（不得超过15人）（且必须大于1人）"), std::cin >> num;
 	input(), game();
 }
 void slowsay(string s) {
