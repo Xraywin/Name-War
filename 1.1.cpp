@@ -31,7 +31,7 @@ int calc(string, int);
 int main()
 {
 	srand(time(0));
-	slowsay("游戏名：Name War 版本：1.0 作者：Xraywin");
+	slowsay("游戏名：Name War 版本：1.1 作者：Xraywin");
 	Sleep(1000);
 	slowsay("请输入您的游玩人数：（不得超过15人）（且必须大于1人）");
 	std::cin >> num;
